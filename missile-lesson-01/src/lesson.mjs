@@ -119,8 +119,8 @@ add('intro2', 0, `<h1 data-s="0">מה נעשה בשיעור</h1><div class="cols
 add('c1t', 1, titleCard(1), ['פרק ראשון. מה בעצם ההבדל בין רקטה לטיל?']);
 
 add('c1a', 1, `<div class="cols">
-  <div><div class="card hlbox" data-hl="0" style="margin-bottom:20px"><h2 style="color:var(--orange)">רקטה (לא מונחית)</h2><p>המסלול נקבע בשיגור. אי אפשר לתקן.</p></div>${vid('himars_rocket_salvo', 800, '0')}</div>
-  <div><div class="card hlbox" data-s="1" data-hl="1" style="margin-bottom:20px"><h2>טיל (מונחה)</h2><p>חיישנים + מחשב + הגאים: מתקן בזמן הטיסה.</p></div>${vid('sm2_ship_launch', 800, '1')}</div></div>`,
+  <div><div class="card hlbox" data-hl="0" style="margin-bottom:20px"><h2 style="color:var(--orange)">רקטה (לא מונחית)</h2><p>המסלול נקבע בשיגור. אי אפשר לתקן.</p></div>${vid('himars_rocket_salvo', 800, '0')}<div class="cap" data-s="0">ירי רקטות ארטילריות (להמחשה)</div></div>
+  <div><div class="card hlbox" data-s="1" data-hl="1" style="margin-bottom:20px"><h2>טיל (מונחה)</h2><p>חיישנים + מחשב + הגאים: מתקן בזמן הטיסה.</p></div>${vid('sm2_ship_launch', 800, '1')}<div class="cap" data-s="1">שיגור טיל מספינה</div></div></div>`,
   [
     'רקטה, במובן הצבאי המקובל של המילה, היא בדרך כלל כלי לא מונחה. מכוונים את המשגר, מציתים את המנוע, ומאותו רגע היא טסה כמו אבן שנזרקה: המסלול שלה נקבע בשיגור, ואי אפשר לתקן אותו.',
     'טיל הוא כלי מונחה. יש לו חיישנים, מחשב והגאים, והוא מתקן את המסלול שלו תוך כדי טיסה. זה כל ההבדל: לא הגודל ולא המנוע, אלא היכולת לתקן.',
@@ -345,7 +345,7 @@ add('c5c', 5, `<h1 data-s="0">התיקון: ניווט לווייני</h1><div c
     'שני החיישנים משלימים זה את זה. האינרציאלי רציף ומהיר, אבל נסחף. הלווייני מדויק לאורך זמן, אבל אפשר לשבש אותו. לכן משלבים: הלוויין מתקן את הסחיפה, והאינרציאלי ממלא את הרווחים.',
   ], { vids: ['gps_constellation_orbits'] });
 
-add('c5d', 5, `<h1 data-s="0">איפה המטרה? מכ״ם</h1><div class="cols"><div style="flex:none">${vid('air_defense_radar_setup', 760, '0')}<div class="cap" data-s="0">הצבת מכ״ם של הגנה אווירית</div></div><div>
+add('c5d', 5, `<h1 data-s="0">איפה המטרה? מכ״ם</h1><div class="cols"><div style="flex:none">${vid('radar_antenna_rotating', 760, '0')}<div class="cap" data-s="0">אנטנת מכ״ם מסתובבת (מכ״ם אזרחי לבקרת טיסה)</div></div><div>
   <svg viewBox="0 0 900 360" width="900" height="360">
     <g data-s="0+4"><path d="M60,300 L120,300 L90,240 Z" fill="#4cc9f0"/><path d="M60,220 Q110,240 100,290" fill="none" stroke="#4cc9f0" stroke-width="8"/>
     <g transform="translate(780,90) rotate(180)">${missileIcon(1.3, '#ff5d8f')}</g><text class="small" x="780" y="50" text-anchor="middle">מטרה</text></g>
@@ -357,7 +357,7 @@ add('c5d', 5, `<h1 data-s="0">איפה המטרה? מכ״ם</h1><div class="cols
   <div class="card" data-s="0+12"><p>זמן עד שההד חוזר ← <span class="em">מרחק</span></p></div></div></div>`,
   [
     'ועכשיו, "איפה המטרה". הכלי העיקרי הוא {מכ״ם|מַכָּם}. {מכ״ם|מַכָּם} משדר גלי רדיו, ומקשיב להד שחוזר מהמטרה. גלי רדיו נעים במהירות האור, ולכן מהזמן שעבר עד שההד חזר אפשר לחשב את המרחק.',
-  ], { vids: ['air_defense_radar_setup'] });
+  ], { vids: ['radar_antenna_rotating'] });
 
 add('c5d2', 5, `<h1 data-s="0">דוגמה: מרחק לפי זמן ההד</h1>${mathRows([
     ['0+2', `מהירות האור: ${E('300,000 [ק״מ בשנייה]')}`],
@@ -380,7 +380,7 @@ add('c5d3', 5, `<h1 data-s="0">מהמכ״ם אל הטיל: קישור הנתונ
 add('c5e', 5, `<h1 data-s="0">ראש הביות: העיניים של הקטע האחרון</h1><div class="cols">
   <div class="card hlbox" data-s="0+4" data-hl="0"><h2>מכ״מי פעיל</h2><p>מכ״ם קטן שלם:<br><span class="em">משדר וקולט</span> בעצמו</p></div>
   <div class="card hlbox" data-s="0+11" data-hl="0"><h2>מכ״מי חצי־פעיל</h2><p><span class="em">רק קולט.</span><br>מכ״ם אחר "מאיר" את המטרה</p></div>
-  <div class="card hlbox" data-s="1" data-hl="1"><h2 style="color:var(--orange)">אינפרה־אדום</h2><p>מצלמת חום.<br><span class="em">לא משדר כלום</span></p>${pic('thermal', 470, 264, '1', 'margin-top:16px')}</div></div>`,
+  <div class="card hlbox" data-s="1" data-hl="1"><h2 style="color:var(--orange)">אינפרה־אדום</h2><p>מצלמת חום.<br><span class="em">לא משדר כלום</span></p>${pic('aim9_sidewinder_wingtip', 470, 264, '1', 'margin-top:16px')}<div class="cap" data-s="1">טיל אוויר־אוויר מונחה חום על קצה כנף</div></div></div>`,
   [
     'בקטע האחרון נכנס לפעולה ראש הביות שבחרטום. ראש ביות {מכ״מי|מַכָּמִי} פעיל הוא {מכ״ם|מַכָּם} קטן שלם, שמשדר וקולט בעצמו. ראש ביות חצי־פעיל רק קולט: {מכ״ם|מַכָּם} אחר, על הקרקע או במטוס, מאיר את המטרה, והטיל מתביית על ההחזר.',
     'ראש ביות אינפרה־אדום לא משדר כלום. זו מצלמת חום, שרואה את החום שהמטרה פולטת, למשל מהמנוע שלה. ומכיוון שהוא לא משדר, קשה מאוד לגלות אותו.',
