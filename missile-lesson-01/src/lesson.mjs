@@ -208,7 +208,7 @@ add('c3b', 3, `<h1 data-s="0">שני סוגי מנועים</h1><div class="cols"
   ]);
 
 add('c3m1', 3, `<div class="mathbadge" data-s="0">רגע מתמטי 1 · יחסים ואחוזים</div><h1 data-s="0">איזה חלק מהטיל הוא חומר הודף?</h1>${mathRows([
-    ['0+9', `מסה בשיגור: ${E('1,000 [ק״ג]')} מתוכם הודף: ${E('600 [ק״ג]')}`],
+    ['0+7', `מסה בשיגור: ${E('1,000 [ק״ג]')} מתוכם הודף: ${E('600 [ק״ג]')}`],
     ['1', `<span class="cy">אחוז = החלק ÷ השלם × 100</span>`],
     ['1+4', E('600 ÷ 1,000 = 0.6')],
     ['1+8', E('0.6 × 100 = 60%', 'res')],
@@ -220,6 +220,7 @@ add('c3m1', 3, `<div class="mathbadge" data-s="0">רגע מתמטי 1 · יחס�
   ]);
 
 add('c3m2', 3, `<div class="mathbadge" data-s="0">רגע מתמטי 1 · יחס דחף למשקל</div><div class="cols"><div style="flex:1.5"><h1 data-s="0">האם המנוע חזק מספיק?</h1>${mathRows([
+    ['0+4', `משווים שני כוחות: <span style="color:var(--green)">דחף</span> מול <span style="color:var(--pink)">משקל</span>`],
     ['0+13', `משקל של 1 ק״ג ≈ ${E('10 [ניוטון]')}`],
     ['0+18', `משקל הטיל: ${E('1,000 × 10 = 10,000 [ניוטון]')}`],
     ['1', `דחף המנוע: ${E('50,000 [ניוטון]')}`],
@@ -264,6 +265,7 @@ add('c3s', 3, `<div class="mathbadge" data-s="0">פתרון</div>${mathRows([
 add('c4t', 4, titleCard(4), ['פרק רביעי. כמה מהר זה מהיר?']);
 
 add('c4m1', 4, `<div class="mathbadge" data-s="0">רגע מתמטי 2 · המרת יחידות</div><h1 data-s="0">מטרים לשנייה ↔ קילומטרים לשעה</h1>${mathRows([
+    ['0+3', `ביומיום: <span class="em">קילומטרים לשעה (קמ״ש)</span> · בהנדסה: <span class="cy">מטרים לשנייה</span>`],
     ['1+3', `${E('1 [ק״מ] = 1,000 [מ׳]')} ${E('1 [שעה] = 3,600 [שניות]')}`],
     ['1+9', `${E('1 [מ׳ לשנייה] = 3,600 [מ׳ לשעה] = 3.6 [קמ״ש]', 'res')}`],
     ['2', `<span class="cy">ממ׳ לשנייה לקמ״ש:</span> ${E('× 3.6')} <span class="cy">מקמ״ש למ׳ לשנייה:</span> ${E('÷ 3.6')}`],
@@ -308,8 +310,8 @@ add('c4s', 4, `<div class="mathbadge" data-s="0">פתרון</div>${mathRows([
 add('c5t', 5, titleCard(5), ['פרק חמישי. איך הטיל יודע איפה הוא, ואיפה המטרה?']);
 
 add('c5a', 5, `<div class="center"><div class="cols" style="height:auto;width:100%">
-  <div class="card" data-s="0+4"><div class="big" style="font-size:84px;color:var(--violet)">איפה אני?</div><p class="sub2">חיישנים אינרציאליים · לוויינים</p></div>
-  <div class="card" data-s="0+5.5"><div class="big" style="font-size:84px;color:var(--cyan)">איפה המטרה?</div><p class="sub2">מכ״ם · קישור נתונים · ראש ביות</p></div></div></div>`,
+  <div class="card" data-s="0+1"><div class="big" style="font-size:84px;color:var(--violet)">איפה אני?</div><p class="sub2">חיישנים אינרציאליים · לוויינים</p></div>
+  <div class="card" data-s="0+3"><div class="big" style="font-size:84px;color:var(--cyan)">איפה המטרה?</div><p class="sub2">מכ״ם · קישור נתונים · ראש ביות</p></div></div></div>`,
   ['כדי להגיע למטרה, הטיל צריך תשובה לשתי שאלות נפרדות: איפה אני, ואיפה המטרה. לכל שאלה יש חיישנים משלה.']);
 
 add('c5b', 5, `<h1 data-s="0">איפה אני? ניווט אינרציאלי</h1><div class="cols"><div>${bullets([
@@ -433,7 +435,7 @@ add('c6c', 6, `<h1 data-s="0">לאן מכוונים? אל נקודת המפגש<
     <path id="mslp" d="M300,580 L700,120" fill="none" stroke="none"/>
     <g data-s="0"><text class="small" x="1600" y="80" text-anchor="middle" style="fill:#ff5d8f">מטרה</text><text class="small" x="300" y="630" text-anchor="middle">טיל</text></g>
     <g data-s="0+7" data-x="1"><path d="M300,580 Q900,560 1250,120" fill="none" stroke="#9fb0c8" stroke-width="5" stroke-dasharray="14 10"/>
-      <text class="lab" x="1150" y="430" text-anchor="middle" style="fill:#9fb0c8">רודף אחרי המטרה: מגיע מאוחר</text></g>
+      <text class="lab" x="1300" y="470" text-anchor="middle" style="fill:#9fb0c8">רודף אחרי המטרה: מגיע מאוחר</text></g>
     <g data-s="1"><path d="M300,580 L700,120" fill="none" stroke="#2fd6a3" stroke-width="6"/><circle cx="700" cy="120" r="20" fill="none" stroke="#ffb703" stroke-width="6"/>
       <text class="lab" x="700" y="70" text-anchor="middle" style="fill:#ffb703">נקודת המפגש</text></g>
     <g data-s="2"><path d="M300,580 L1600,120 M400,465 L1375,120 M500,350 L1150,120 M600,235 L925,120" stroke="#4cc9f0" stroke-width="3" fill="none"/>
