@@ -119,13 +119,13 @@ add('intro2', 0, `<h1 data-s="0">מה נעשה בשיעור</h1><div class="cols
 add('c1t', 1, titleCard(1), ['פרק ראשון. מה בעצם ההבדל בין רקטה לטיל?']);
 
 add('c1a', 1, `<div class="cols">
-  <div><div class="card hlbox" data-hl="0" style="margin-bottom:20px"><h2 style="color:var(--orange)">רקטה (לא מונחית)</h2><p>המסלול נקבע בשיגור. אי אפשר לתקן.</p></div>${vid('mlrs', 800, '0')}</div>
-  <div><div class="card hlbox" data-s="1" data-hl="1" style="margin-bottom:20px"><h2>טיל (מונחה)</h2><p>חיישנים + מחשב + הגאים: מתקן בזמן הטיסה.</p></div>${vid('ship_sam', 800, '1')}</div></div>`,
+  <div><div class="card hlbox" data-hl="0" style="margin-bottom:20px"><h2 style="color:var(--orange)">רקטה (לא מונחית)</h2><p>המסלול נקבע בשיגור. אי אפשר לתקן.</p></div>${vid('himars_rocket_salvo', 800, '0')}</div>
+  <div><div class="card hlbox" data-s="1" data-hl="1" style="margin-bottom:20px"><h2>טיל (מונחה)</h2><p>חיישנים + מחשב + הגאים: מתקן בזמן הטיסה.</p></div>${vid('sm2_ship_launch', 800, '1')}</div></div>`,
   [
     'רקטה, במובן הצבאי המקובל של המילה, היא בדרך כלל כלי לא מונחה. מכוונים את המשגר, מציתים את המנוע, ומאותו רגע היא טסה כמו אבן שנזרקה: המסלול שלה נקבע בשיגור, ואי אפשר לתקן אותו.',
     'טיל הוא כלי מונחה. יש לו חיישנים, מחשב והגאים, והוא מתקן את המסלול שלו תוך כדי טיסה. זה כל ההבדל: לא הגודל ולא המנוע, אלא היכולת לתקן.',
     'למה זה חשוב? כי בשיגור אף פעם לא יודעים הכול. הרוח משתנה, המנוע לא בוער בדיוק כמו שתכננו, ואם המטרה היא מטוס, היא גם זזה ומתחמקת. כלי שלא מתקן יחטיא. כלי שמתקן כל הזמן יכול לפגוע.',
-  ], { vids: ['mlrs', 'ship_sam'] });
+  ], { vids: ['himars_rocket_salvo', 'sm2_ship_launch'] });
 
 add('c1b', 1, `<h1 data-s="0">למילה "רקטה" יש שלושה מובנים</h1>${bullets([
     ['0+1', '<span class="em">נשק לא מונחה</span><small>המובן שבו נשתמש כשנשווה לטיל</small>'],
@@ -138,20 +138,20 @@ add('c1c', 1, `<h1 data-s="0">למה משמשים טילים?</h1><div class="co
     ['0+1', '<span class="em">יירוט (הגנה אווירית)</span><small>מהקרקע או מספינה אל מטרה מעופפת</small>'],
     ['1', '<span class="em">נגד ספינות</span><small>טס נמוך מעל הים, מחפש בעצמו בסוף</small>'],
     ['1+6', '<span class="em">אוויר־אוויר</span><small>ממטוס אל מטוס</small>'],
-  ])}</div><div style="flex:none">${vid('interceptor', 800, '0+1')}<div class="cap" data-s="0+1">שיגור טיל מיירט בניסוי</div></div></div>`,
+  ])}</div><div style="flex:none;position:relative">${vid('thaad_interceptor_launch', 800, '0+1')}${vid('antiship_missile_launch', 800, '1', 'position:absolute;top:0;left:0')}<div class="cap" data-s="0+1">שיגורי ניסוי של טיל מיירט ושל טיל נגד ספינות</div></div></div>`,
   [
     'למה משמשים טילים? שלוש דוגמאות. טיל מיירט בהגנה אווירית משוגר מהקרקע או מספינה כדי לפגוע במטרה מעופפת: מטוס, כטב״ם, רקטה או טיל אחר. בישראל מכירים את כיפת ברזל, שהמיירט שלה נקרא תמיר, ואת חץ {3|שלוש}, שמיירט טילים בליסטיים מחוץ לאטמוספרה.',
     'טיל נגד ספינות טס בדרך כלל נמוך מעל הים, ומחפש את הספינה בעצמו בקטע האחרון של הטיסה. וטיל אוויר־אוויר משוגר ממטוס אל מטוס אחר.',
-  ], { vids: ['interceptor'] });
+  ], { vids: ['thaad_interceptor_launch', 'antiship_missile_launch'] });
 
-add('c1d', 1, `<h1 data-s="0">קרוב משפחה: משגר הלוויינים</h1><div class="cols"><div style="flex:none">${pic('redstone', 520, 690, '0')}<div class="cap" data-s="0">מרקורי־רדסטון, 1961 (NASA)</div></div>
+add('c1d', 1, `<h1 data-s="0">קרוב משפחה: משגר הלוויינים</h1><div class="cols"><div style="flex:none">${vid('mercury_redstone_launch', 800, '0')}<div class="cap" data-s="0">שיגור מרקורי־רדסטון (NASA)</div></div>
   <div><div class="card" data-s="0+7" style="margin-bottom:22px"><h2>1957</h2><p>טיל R-7 משגר את ספוטניק, הלוויין הראשון</p></div>
   <div class="card" data-s="0+13" style="margin-bottom:22px"><h2>1961</h2><p>טיל רדסטון נושא את אלן שפרד לטיסה קצרה בחלל</p></div>
   <div class="card" data-s="1"><h2 style="color:var(--amber)">אותו עיקרון</h2><p>מנוע רקטי + מבנה קל + הנחיה.<br>ההבדל: המטען והיעד.</p></div></div></div>`,
   [
     'ויש קרוב משפחה מפתיע: משגר הלוויינים. המשגרים הראשונים לחלל היו טילים בליסטיים שהוסבו למשימה חדשה. הטיל הסובייטי {R-7|אֶר שֶׁבַע} שיגר את ספוטניק, הלוויין הראשון, בשנת {1957|אלף תשע מאות חמישים ושבע}. טיל רדסטון האמריקאי נשא את האסטרונאוט אלן שפרד לטיסה קצרה בחלל, בשנת {1961|אלף תשע מאות שישים ואחת}.',
     'העיקרון זהה: מנוע רקטי, מבנה קל, ומערכת הנחיה שמחזיקה את הכלי על המסלול. ההבדל הוא במטען וביעד. לכן רוב מה שתלמדו כאן על טילים נכון גם למשגרי חלל.',
-  ]);
+  ], { vids: ['mercury_redstone_launch'] });
 
 // ===== CH 2 =====
 add('c2t', 2, titleCard(2), ['פרק שני. מה יש בתוך הטיל?']);
@@ -191,11 +191,11 @@ add('c3a', 3, `<h1 data-s="0">החוק השלישי של ניוטון</h1><div c
     <g data-s="0+12"><path d="M520,300 L800,300" stroke="#2fd6a3" stroke-width="14" marker-end="url(#ah)"/><text class="lab" x="650" y="360" text-anchor="middle" style="fill:#2fd6a3">דחף קדימה</text></g>
   </svg>
   <div class="card" data-s="1" style="margin-top:10px"><p><span class="em">מנוע סילון</span> שואב חמצן מהאוויר.<br><span class="cy">מנוע רקטי</span> נושא דלק <b>וגם</b> מחמצן, ולכן עובד גם בחלל.</p></div></div>
-  <div style="flex:none">${vid('engine_test', 780, '0')}<div class="cap" data-s="0">ניסוי קרקעי של מנוע רקטי (NASA)</div></div></div>`,
+  <div style="flex:none">${vid('srb_static_fire', 780, '0')}<div class="cap" data-s="0">ניסוי קרקעי של מנוע רקטי (NASA)</div></div></div>`,
   [
     'מנוע רקטי עובד לפי החוק השלישי של ניוטון: לכל פעולה יש תגובה שווה והפוכה. המנוע שורף חומר הודף, ופולט גזים חמים אחורה במהירות עצומה. הגזים נדחפים אחורה, והטיל נדחף קדימה. לכוח הזה קוראים דחף.',
     'מנוע סילון של מטוס שואב חמצן מהאוויר. מנוע רקטי נושא איתו גם את הדלק וגם את המחמצן. לכן הוא עובד גם בגובה רב, וגם בחלל, שם אין אוויר בכלל.',
-  ], { vids: ['engine_test'] });
+  ], { vids: ['srb_static_fire'] });
 
 add('c3b', 3, `<h1 data-s="0">שני סוגי מנועים</h1><div class="cols">
   <div class="card hlbox" data-s="0+1" data-hl="0"><h2 style="color:var(--orange)">דלק מוצק</h2>${bullets([
@@ -235,7 +235,7 @@ add('c3m2', 3, `<div class="mathbadge" data-s="0">רגע מתמטי 1 · יחס 
     'נניח שהדחף הוא {50,000|חמישים אלף} ניוטון. יחס דחף למשקל הוא {50,000|חמישים אלף} חלקי {10,000|עשרת אלפים}, כלומר חמש. הדחף גדול פי חמישה מהמשקל. אם היחס קטן מאחת, הטיל לא יתרומם בכלל. וככל שהיחס גדול יותר, ההאצה חזקה יותר.',
   ]);
 
-add('c3c', 3, `<div class="cols"><div style="flex:none">${vid('nasa_liftoff', 880, '0')}<div class="cap" data-s="0">המראה של משגר חלל (NASA)</div></div>
+add('c3c', 3, `<div class="cols"><div style="flex:none">${vid('sls_artemis1_liftoff', 880, '0')}<div class="cap" data-s="0">המראה של משגר חלל (NASA)</div></div>
   <div><h1 data-s="0">להשוואה: משגר חלל</h1>${bullets([
     ['0+3', 'בערך <span class="em">85%</span> מהמסה בשיגור: חומר הודף'],
     ['0+8', 'יחס דחף למשקל: <span class="em">קצת מעל 1</span>'],
@@ -243,7 +243,7 @@ add('c3c', 3, `<div class="cols"><div style="flex:none">${vid('nasa_liftoff', 88
     ['0+19', 'טיל מיירט: יחס גבוה בהרבה'],
   ])}</div></div>`,
   ['להשוואה: במשגר חלל גדול, בערך {85|שמונים וחמישה} אחוז מהמסה בשיגור היא חומר הודף, ויחס הדחף למשקל הוא רק קצת מעל אחת. לכן הוא מתרומם לאט, ורק אחר כך, כשהדלק נשרף והוא נעשה קל יותר, הוא מאיץ באמת. טיל מיירט בנוי אחרת: הוא צריך להגיע מהר, ולכן יחס הדחף למשקל שלו גבוה בהרבה.'],
-  { vids: ['nasa_liftoff'] });
+  { vids: ['sls_artemis1_liftoff'] });
 
 add('c3p', 3, pauseScene([
     `טיל לדוגמה: מסה בשיגור ${E('200 [ק״ג]')}`, `מתוכם חומר הודף ${E('150 [ק״ג]')} · דחף ${E('8,000 [ניוטון]')}`,
@@ -335,7 +335,7 @@ add('c5b', 5, `<h1 data-s="0">איפה אני? ניווט אינרציאלי</h1
     'החיסרון: שגיאות מצטברות. כל מדידה קצת לא מדויקת, והטעויות הקטנות נערמות עם הזמן. זה כמו ללכת בעיניים עצומות ולספור צעדים. אחרי עשרה צעדים אתם יודעים איפה אתם. אחרי אלף, כבר לא.',
   ]);
 
-add('c5c', 5, `<h1 data-s="0">התיקון: ניווט לווייני</h1><div class="cols"><div style="flex:none">${vid('gps_anim', 800, '0')}<div class="cap" data-s="0">לווייני ניווט סביב כדור הארץ</div></div><div>${bullets([
+add('c5c', 5, `<h1 data-s="0">התיקון: ניווט לווייני</h1><div class="cols"><div style="flex:none">${vid('gps_constellation_orbits', 800, '0')}<div class="cap" data-s="0">לווייני ניווט סביב כדור הארץ</div></div><div>${bullets([
     ['0+4', 'כל לוויין משדר אות עם <span class="em">חותמת זמן</span>'],
     ['0+9', 'זמן ההגעה של האות ← <span class="em">מרחק</span> ללוויין'],
     ['0+15', '<span class="em">4 לוויינים</span> לפחות ← מיקום'],
@@ -343,9 +343,9 @@ add('c5c', 5, `<h1 data-s="0">התיקון: ניווט לווייני</h1><div c
   [
     'הפתרון: ניווט לווייני, כמו {GPS|גִ׳י פִּי אֶס}. כל לוויין משדר אות עם חותמת זמן מדויקת. המקלט מודד כמה זמן לקח לאות להגיע, ומזה מחשב את המרחק ללוויין. עם ארבעה לוויינים לפחות, אפשר לחשב מיקום.',
     'שני החיישנים משלימים זה את זה. האינרציאלי רציף ומהיר, אבל נסחף. הלווייני מדויק לאורך זמן, אבל אפשר לשבש אותו. לכן משלבים: הלוויין מתקן את הסחיפה, והאינרציאלי ממלא את הרווחים.',
-  ], { vids: ['gps_anim'] });
+  ], { vids: ['gps_constellation_orbits'] });
 
-add('c5d', 5, `<h1 data-s="0">איפה המטרה? מכ״ם</h1><div class="cols"><div style="flex:none">${vid('radar', 760, '0')}<div class="cap" data-s="0">אנטנת מכ״ם</div></div><div>
+add('c5d', 5, `<h1 data-s="0">איפה המטרה? מכ״ם</h1><div class="cols"><div style="flex:none">${vid('air_defense_radar_setup', 760, '0')}<div class="cap" data-s="0">הצבת מכ״ם של הגנה אווירית</div></div><div>
   <svg viewBox="0 0 900 360" width="900" height="360">
     <g data-s="0+4"><path d="M60,300 L120,300 L90,240 Z" fill="#4cc9f0"/><path d="M60,220 Q110,240 100,290" fill="none" stroke="#4cc9f0" stroke-width="8"/>
     <g transform="translate(780,90) rotate(180)">${missileIcon(1.3, '#ff5d8f')}</g><text class="small" x="780" y="50" text-anchor="middle">מטרה</text></g>
@@ -354,14 +354,28 @@ add('c5d', 5, `<h1 data-s="0">איפה המטרה? מכ״ם</h1><div class="cols
     <path data-draw="0+9" data-dur="2.5" d="M700,130 L140,260" stroke="#2fd6a3" stroke-width="6" fill="none"/>
     <g data-s="0+9"><text class="small" x="460" y="240" text-anchor="middle" style="fill:#2fd6a3">הד חוזר</text></g>
   </svg>
-  <div class="card" data-s="0+12"><p>זמן עד שההד חוזר ← <span class="em">מרחק</span></p></div>
-  <div class="card" data-s="1" style="margin-top:14px"><p style="font-size:36px">האור: 300,000 ק״מ בשנייה. הד אחרי אלפית שנייה:</p><p>${E('300,000 ÷ 1,000 = 300 [ק״מ]')}</p><p>הלוך ושוב, אז ${E('300 ÷ 2 = 150 [ק״מ]', 'res')}</p></div>
-  <div class="card" data-s="2" style="margin-top:14px"><p style="font-size:38px">המכ״ם הקרקעי שולח לטיל <span class="cy">עדכונים בקישור הנתונים</span></p></div></div></div>`,
+  <div class="card" data-s="0+12"><p>זמן עד שההד חוזר ← <span class="em">מרחק</span></p></div></div></div>`,
   [
     'ועכשיו, "איפה המטרה". הכלי העיקרי הוא {מכ״ם|מַכָּם}. {מכ״ם|מַכָּם} משדר גלי רדיו, ומקשיב להד שחוזר מהמטרה. גלי רדיו נעים במהירות האור, ולכן מהזמן שעבר עד שההד חזר אפשר לחשב את המרחק.',
-    'דוגמה קצרה. האור עובר {300,000|שלוש מאות אלף} קילומטרים בשנייה. נניח שההד חזר אחרי אלפית שנייה. באלפית שנייה האור עובר {300|שלוש מאות} קילומטרים. אבל זו הדרך הלוך ושוב, ולכן המטרה נמצאת בחצי מזה: {150|מאה וחמישים} קילומטרים.',
-    '{מכ״ם|מַכָּם} גדול, על הקרקע או על ספינה, מגלה את המטרה ועוקב אחריה. הוא שולח לטיל עדכונים דרך קישור הנתונים: המטרה זזה, תתקן לשם. כך הטיל יכול לטוס את רוב הדרך בלי לראות את המטרה בעצמו.',
-  ], { vids: ['radar'] });
+  ], { vids: ['air_defense_radar_setup'] });
+
+add('c5d2', 5, `<h1 data-s="0">דוגמה: מרחק לפי זמן ההד</h1>${mathRows([
+    ['0+2', `מהירות האור: ${E('300,000 [ק״מ בשנייה]')}`],
+    ['0+6', `ההד חזר אחרי אלפית שנייה: ${E('300,000 ÷ 1,000 = 300 [ק״מ]')}`],
+    ['0+13', `הלוך ושוב, אז חצי: ${E('300 ÷ 2 = 150 [ק״מ]', 'res')}`],
+  ])}`,
+  ['דוגמה קצרה. האור עובר {300,000|שלוש מאות אלף} קילומטרים בשנייה. נניח שההד חזר אחרי אלפית שנייה. באלפית שנייה האור עובר {300|שלוש מאות} קילומטרים. אבל זו הדרך הלוך ושוב, ולכן המטרה נמצאת בחצי מזה: {150|מאה וחמישים} קילומטרים.']);
+
+add('c5d3', 5, `<h1 data-s="0">מהמכ״ם אל הטיל: קישור הנתונים</h1>
+  <svg viewBox="0 0 1760 520" width="1760" height="520"><defs><marker id="ah7" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="context-stroke"/></marker></defs>
+    <path d="M60,470 L1700,470" stroke="#2a3b57" stroke-width="4"/>
+    <g data-s="0"><path d="M240,470 L340,470 L290,380 Z" fill="#4cc9f0"/><path d="M230,340 Q320,380 300,460" fill="none" stroke="#4cc9f0" stroke-width="10"/><text class="lab" x="290" y="512" text-anchor="middle" style="fill:#4cc9f0">מכ״ם קרקעי</text>
+      <g transform="translate(1540,90) rotate(180)">${missileIcon(1.8, '#ff5d8f')}</g><text class="lab" x="1540" y="50" text-anchor="middle" style="fill:#ff5d8f">מטרה</text></g>
+    <g data-s="0+3"><path d="M330,350 L1440,110" stroke="#ffb703" stroke-width="5" stroke-dasharray="14 10" marker-end="url(#ah7)" marker-start="url(#ah7)"/><text class="lab" x="1000" y="150" text-anchor="middle" style="fill:#ffb703">מגלה ועוקב</text></g>
+    <g data-s="0+6"><g transform="translate(900,330) rotate(-22)">${missileIcon(1.8)}</g><text class="lab" x="900" y="410" text-anchor="middle">טיל</text>
+      <path d="M340,400 L800,345" stroke="#2fd6a3" stroke-width="6" marker-end="url(#ah7)"/><text class="lab" x="560" y="440" text-anchor="middle" style="fill:#2fd6a3">עדכונים בקישור הנתונים</text></g>
+  </svg>`,
+  ['{מכ״ם|מַכָּם} גדול, על הקרקע או על ספינה, מגלה את המטרה ועוקב אחריה. הוא שולח לטיל עדכונים דרך קישור הנתונים: המטרה זזה, תתקן לשם. כך הטיל יכול לטוס את רוב הדרך בלי לראות את המטרה בעצמו.']);
 
 add('c5e', 5, `<h1 data-s="0">ראש הביות: העיניים של הקטע האחרון</h1><div class="cols">
   <div class="card hlbox" data-s="0+4" data-hl="0"><h2>מכ״מי פעיל</h2><p>מכ״ם קטן שלם:<br><span class="em">משדר וקולט</span> בעצמו</p></div>
@@ -481,8 +495,8 @@ add('c6s', 6, `<div class="mathbadge" data-s="0">פתרון</div>${mathRows([
 // ===== CH 7 =====
 add('c7t', 7, titleCard(7), ['פרק שביעי. מה קורה מהשיגור ועד המפגש?']);
 
-add('c7v', 7, `<div class="center">${vid('ship_sam2', 1280, '0')}</div>`,
-  ['עכשיו נחבר את הכול לטיסה אחת. טיסה של טיל מתחלקת לשלושה שלבים.'], { vids: ['ship_sam2'] });
+add('c7v', 7, `<div class="center">${vid('patriot_launch', 1280, '0')}</div>`,
+  ['עכשיו נחבר את הכול לטיסה אחת. טיסה של טיל מתחלקת לשלושה שלבים.'], { vids: ['patriot_launch'] });
 
 add('c7a', 7, `<h1 data-s="0">שלושה שלבי טיסה</h1>
   <svg viewBox="0 0 1760 650" width="1760" height="650">
