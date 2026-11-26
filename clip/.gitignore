@@ -1,0 +1,4 @@
+# rendered videos and the song itself stay out of the repository
+*.mp4
+*.mp3
+*.wav
